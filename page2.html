@@ -72,6 +72,26 @@
             font-size: 14px;
         }
 
+        .homeBtn {
+        position: fixed;
+        bottom: 20px;
+        left:   180px;
+        background: #2196F3;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .homeBtn {
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+
+
     /* RESPONSIVE MOBILE */
     @media (max-width: 480px) {
         .notepad {
@@ -106,12 +126,17 @@ Yours, Riski
 
     </div>
 </div>
-<button class="nextPageBtn" onclick="goNext()">⬅ Previous Page</button>
+<button class="nextPageBtn" onclick="goNext()"> &#8636; Previous Page</button>
+<button class="homeBtn" onclick="goHome()"> Home </button>
 
 <script>
 function goNext() {
     // Ganti ke file lain yang kamu mau
     window.location.href = "page1.html";
+}
+function goHome() {
+    // Ganti ke file lain yang kamu mau
+    window.location.href = "Birthday Asa.html";
 }
 </script>
 </body>
