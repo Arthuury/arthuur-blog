@@ -163,8 +163,11 @@
       for (let i = 0; i < 150; i++) {
         confettis.push(new Confetti());
       }
-      animateConfetti();
-      window.location.href = "page1.html";
+       animateConfetti();
+
+  setTimeout(() => {
+    window.location.href = "page1.html";
+  }, 2000); // delay 2 detik
     }
 
     function animateConfetti() {
